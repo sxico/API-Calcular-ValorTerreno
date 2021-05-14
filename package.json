@@ -4,7 +4,7 @@
   "description": "Teste - Desenvolvedor Back-end(SQL)",
   "main": "index.js",
   "scripts": {
-    "start": "node start",
+    "start": "node index.js",
     "dev": "nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/sxico/TesteinGaia#readme",
   "dependencies": {
+    "body-parse": "^0.1.0",
     "consign": "^0.1.6",
     "express": "^4.17.1",
     "mysql": "^2.18.1"
