@@ -4,9 +4,10 @@ const conexao = require('../infraestrutura/conexao')
  *e busca na base de dados MySQL e retorna o valor do metro
  * @param { String } param - Recebe uma String - CEP
  * @returns { String } - Retorna uma string - Valor Metro
-**/ 
-async function busca(params) {
-    return promisse(function(resolve, reject){
+ * params - Variavel
+ **/ 
+ async function busca(params) {
+    return new Promise(function(resolve, reject){
         conexao.query('SELECT valor FROM valorCep WHERE cep=?' ,params, (erro, resultado) => {
             if(erro) {
                 reject(erro)
