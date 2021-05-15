@@ -12,7 +12,7 @@ module.exports = app => {
                     console.log(dados)
                 })     
             } else{
-                res.send('Para o cáculo o imóvel deve ter no mínimo 10 metros e no máximo 100000 metros!')
+                res.send('Para o cáculo do imóvel deve ter no mínimo 10 metros e no máximo 100000 metros!')
             }
         } else{
             res.send('O uso do CEP é obrigatório para a consulta!')
