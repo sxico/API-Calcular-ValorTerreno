@@ -1,20 +1,20 @@
 const conexao = require('../infraestrutura/conexao')
-     
 
-        class Cep  {
-            busca(valor) {
-                const sql = 'SELECT valor FROM valorCep WHERE cep=?'
-                conexao.query(sql, valor, (erro, resultados) => {
-                    if(erro) {
-                        console.log(erro)
-                    } else {
-                        console.log(resultados)
-                    }
-                })
-            }
-        }
-        
-        
-        module.exports = new Cep
+/**Função recebe um parametro(CEP)
+ *e busca na base de dados MySQL e retorna o valor do metro
+ * @param { String } param - Recebe uma String - CEP
+ * @returns { String } - Retorna uma string - Valor Metro
+**/ 
+async function busca(params) {
+    return promisse(function(resolve, reject){
+        conexao.query('SELECT valor FROM valorCep WHERE cep=?' ,params, (erro, resultado) => {
+            if(erro) {
+                reject(erro)
+            }else{
+                resolve(resultado[0])
+            } 
+        })
+    })
+}
 
-       
+module.exports = busca

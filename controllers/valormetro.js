@@ -1,10 +1,9 @@
-const bodyParser = require("body-parser")
-const ValorMetro = require('../models/valormetro')
+const valorMetro = require('../models/valormetro')
 
 module.exports = app => {
-    app.get('/valormetro', (req, res) => {
-        const valormetro = req.query.cep
-        const retorno = ValorMetro.busca(valormetro)
-        res.send(retorno)
+    app.get('/valormetro', async (req, res) => {
+        const pesquisa = req.query.cep;
+        const retorno = await valorMetro(pesquisa);
+        res.json(retorno);
     })    
 }
