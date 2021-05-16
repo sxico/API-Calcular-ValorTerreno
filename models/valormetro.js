@@ -2,9 +2,8 @@ const conexao = require('../infraestrutura/conexao')
 
 /**Função recebe um parametro(CEP)
  *e busca na base de dados MySQL e retorna o valor do metro
- * @param { String } param - Recebe uma String - CEP
+ * @param { String } params - Recebe uma String - CEP
  * @returns { String } - Retorna uma string - Valor Metro
- * params - Variavel
  **/ 
  async function busca(params) {
     return new Promise(function(resolve, reject){

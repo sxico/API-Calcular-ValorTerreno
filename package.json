@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/sxico/TesteinGaia#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "body-parse": "^0.1.0",
     "consign": "^0.1.6",
     "express": "^4.17.1",
+    "https": "^1.0.0",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
