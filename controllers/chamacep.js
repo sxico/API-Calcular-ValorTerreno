@@ -1,31 +1,14 @@
-const { response } = require('express')
-const https = require('https')
+const axios = require('axios')
 
-
-const options = {
-  hostname: 'http://localhost:3005',
-  port: 443,
-  path: '/valormetro',
-  method: 'GET'
-}
-
-async function chamacep(params) {
+async function pegaCep(parametro){
     return new Promise(function(resolve, reject){
-        const req = https.request(options, params, res => {
-            console.log(`statusCode: ${res.statusCode}`)
-          
-            res.on('data', d => {
-              process.stdout.write(d)
-            })
-          })
-          
-          req.on('error', error => {
-            console.error(error)
-          })
-          
-          req.end()
-        response('Texto')  
-    })
+      axios.get('http://localhost:3005/valormetro' ,{ params: { cep: parametro } }, (erro, result)=> {
+        if(erro) {
+          reject(erro)
+      }else{
+          resolve(result)
+      } 
+      })  
+    });  
 }
-
-module.exports = chamacep
+module.exports = pegaCep
