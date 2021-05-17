@@ -48,7 +48,7 @@ Bairro: Centro - CEP: 12121212 - Valor Metro: 800
 Para uso do Docker deve ter o mesmo instalado [Docker](https://docs.docker.com/get-docker/)  e [Docker Compose](https://docs.docker.com/compose/install/)  
 
 ### Executar Docker
-Primeiro vamos a raiz do projeto e dentro dela via terminal digitamos (Linux - Ubuntu)
+Primeiro vamos a raiz do projeto e dentro dela via terminal (Linux - Ubuntu)
 ```
 sudo docker-compose up
 ```
