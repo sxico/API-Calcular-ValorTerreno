@@ -42,7 +42,7 @@ Bairro: Taquaral - CEP: 11111111 - Metro: 2000
 Bairro: Centro - CEP: 12121212 - Metro: 800  
 
 ## Docker
-Para uso do Docker deve ter o mesmo instalado [Docker] https://docs.docker.com/get-docker/  e Docker Compose via [Docker Compose] https://docs.docker.com/compose/install/  
+Para uso do Docker deve ter o mesmo instalado [Docker](https://docs.docker.com/get-docker/)  e [Docker Compose](https://docs.docker.com/compose/install/)  
 
 ### Executar Docker
 Primeiro vamos a raiz do projeto e dentro dela via terminal digitamos (Linux - Ubuntu)
