@@ -1,5 +1,8 @@
 # Passo a Passo para utilizar da API
 
+_Neste Projeto foi utilizado como base de dados o MySQL_
+
+
 ## Instalar Pacotes
 ```
 npm install
@@ -50,6 +53,21 @@ Primeiro vamos a raiz do projeto e dentro dela via terminal digitamos (Linux - U
 sudo docker-compose up
 ```
 
+## Observação
 
+Deve utilizar o banco de dados [mySQL](https://www.mysql.com/downloads/) - Para pode utilizar o Xampp ou Lampp ou [Docker]
 
+### Docker
+O comando abaixo foi utilizado de um exemplo da internet, caso queira um teste rápido
+
+```
+docker run --name=mysql1 -p 3306:3306 -e MYSQL_ROOT_PASSWORD="" -d mysql/mysql-server:8.0
+```
+
+Os próximos passos desde a criação de uma base de dados, tabela e inserir os dados
+
+#### Acessar Docker-MySQL via terminal
+```
+docker exec -it mysql1 mysql -uroot -p
+```
 
