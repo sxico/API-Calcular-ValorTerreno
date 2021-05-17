@@ -37,8 +37,19 @@ Base de dados MySQL com valores demonstrativos cadastrado
 
 ### Valores
 
-Bairro: Cambuí - CEP: 10101101 - Metro: 1000
-Bairro: Taquaral - CEP: 11111111 - Metro: 2000
-Bairro: Centro - CEP: 12121212 - Metro: 800
+Bairro: Cambuí - CEP: 10101101 - Metro: 1000  
+Bairro: Taquaral - CEP: 11111111 - Metro: 2000  
+Bairro: Centro - CEP: 12121212 - Metro: 800  
+
+## Docker
+Para uso do Docker deve ter o mesmo instalado [Docker] https://docs.docker.com/get-docker/  e Docker Compose via [Docker Compose] https://docs.docker.com/compose/install/  
+
+### Executar Docker
+Primeiro vamos a raiz do projeto e dentro dela via terminal digitamos (Linux - Ubuntu)
+```
+sudo docker-compose up
+```
+
+
 
 
