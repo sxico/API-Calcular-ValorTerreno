@@ -76,8 +76,3 @@ id;
 valor;   
 bairro;  
 cep;  
-
-## Heroku - API Online
-
-Estou com alguns problemas para executar a aplicação. Criação do app e Deploy do código via git foi realizado
-[Heroku - API](https://calcular-valor-imovel.herokuapp.com/)
