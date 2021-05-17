@@ -1,4 +1,4 @@
-# Passo a Passo para utilizar da API
+## Configurações da API
 
 _Neste Projeto foi utilizado como base de dados o MySQL_
 
