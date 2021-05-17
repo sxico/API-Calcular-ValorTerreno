@@ -71,3 +71,7 @@ Os próximos passos desde a criação de uma base de dados, tabela e inserir os 
 docker exec -it mysql1 mysql -uroot -p
 ```
 
+## Heroku - API Online
+
+Estou com alguns problemas para executar a aplicação. Criação do app e Deploy do código via git foi realizado
+[Heroku - API](https://calcular-valor-imovel.herokuapp.com/)
