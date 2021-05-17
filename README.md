@@ -18,7 +18,7 @@ npm run dev
 npm start
 ```
 
-# Parametros ( GET calcular o valor do imóvel atráves da quantidade de metros e com CEP
+## Parametros ( GET calcular o valor do imóvel atráves da quantidade de metros e com CEP
 ### cep: String - metros: String
 
 ## Request
