@@ -26,7 +26,7 @@ npm start
 GET /valortotal
 ```
 ```
-http://localhost:3005/valortotal?cep=<>cep&metros=<metros>
+http://localhost:3005/valortotal?cep=<cep>&metros=<metros>
 ```
 ### Exemplo
 ```
@@ -55,7 +55,7 @@ sudo docker-compose up
 
 ## Observação
 
-Deve utilizar o banco de dados [mySQL](https://www.mysql.com/downloads/) - Para pode utilizar o Xampp ou Lampp ou [Docker]
+Deve utilizar o banco de dados [MySQL](https://www.mysql.com/downloads/) - Xampp/Lampp ou [Docker]
 
 ### Docker
 O comando abaixo foi utilizado de um exemplo da internet, caso queira um teste rápido
