@@ -44,6 +44,7 @@ Bairro: Cambuí - CEP: 10101101 - Valor Metro: 1000
 Bairro: Taquaral - CEP: 11111111 - Valor Metro: 2000  
 Bairro: Centro - CEP: 12121212 - Valor Metro: 800  
 
+
 ## Docker
 Para uso do Docker deve ter o mesmo instalado [Docker](https://docs.docker.com/get-docker/)  e [Docker Compose](https://docs.docker.com/compose/install/)  
 
@@ -70,6 +71,11 @@ Os próximos passos desde a criação de uma base de dados, tabela e inserir os 
 ```
 docker exec -it mysql1 mysql -uroot -p
 ```
+##### Campos
+id;   
+valor;   
+bairro;  
+cep;  
 
 ## Heroku - API Online
 
