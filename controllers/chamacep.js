@@ -1,14 +1,10 @@
 const axios = require('axios')
 
 async function pegaCep(parametro){
-    return new Promise(function(resolve, reject){
-      axios.get('http://localhost:3005/valormetro' ,{ params: { cep: parametro } }, (erro, result)=> {
-        if(erro) {
-          reject(erro)
-      }else{
-          resolve(result)
-      } 
-      })  
-    });  
+  return axios.get('http://localhost:3005/valormetro' ,{ params: { cep: parametro } })
+  .then(function (response) {
+      return response.data
+  })
 }
+
 module.exports = pegaCep
